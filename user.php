@@ -13,8 +13,8 @@ class User
         }
 
         public function findChar($_email){
-            if (strpos($_email, '@') !== true) {
-                echo 'carattere speciale mancante, @ non inserita'
+            if (strpos($_email, '@') != true) {
+                echo 'carattere speciale mancante, @ non inserita';
             }
             else {
                 $this->email = $_email;
