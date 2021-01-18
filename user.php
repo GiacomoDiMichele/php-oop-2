@@ -10,6 +10,8 @@ class User
         $this->nome = $_nome;
         $this->cognome = $_cognome;
 
+        }
+
         public function findChar($_email){
             if (strpos($_email, '@') !== true) {
                 echo 'carattere speciale mancante, @ non inserita'
@@ -18,9 +20,6 @@ class User
                 $this->email = $_email;
             }
         }
-
-    }
-
 }
 
 ?>
